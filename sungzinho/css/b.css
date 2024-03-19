@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body{
+    background: var(--bg-url) top center/cover;
+    margin: 0; 
+    color: var(--text-color);
+}
+:root{ 
+    --text-color:white;
+    --bg-url: black;
+    --switch-bg-url: url(/rocktset/asset/moon-stars.svg);
+    --strong-color:rgba(255,255,255, 0.1);
+    
+}
+.claro {
+    --text-color: black;
+    --bg-url:white;
+    --switch-bg-url: url(/rocktset/asset/sun.svg);
+    --strong-color:rgba(0,0,0, 0.1);
+    --border-bg: 1px solid black;
+}
+nav#menu ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    top: 18px;
+    left: 60%;
+    position: absolute; 
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 22px;    
+    text-transform: uppercase;
+}
+nav#menu li { 
+    display: inline-block;
+    
+    padding: 14px;
+    margin: 2px;
+    transition: 1s;
+}
+nav#menu {
+    display: block
+    
+}
+#menu h1 {
+    display: none;
+}
+#menu li:hover{
+    
+    border-radius: 20px;
+}
+.claro #escuro-e-claro button {
+    left: initial;
+    right: 0;
+}
+#escuro-e-claro{
+    position: relative;
+    width: 64px;
+    display: flex;
+    height: 24px;
+    margin-left:  90% ;
+}
+#escuro-e-claro button{
+    background: white var(--switch-bg-url) no-repeat center;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    
+    
+    position: absolute;
+    z-index: 1;
+    border: var(--border-bg);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#escuro-e-claro span{
+    border-radius: 9999px;
+    width: 64px;
+    height:24px;
+    border: #606060 1px solid;
+    background-color: var(--strong-color);
+    
+    display: block;
+}
+
+
+#menu a:hover{
+    color: rgba(64,88,181,1);
+    transform: scale(1.1);
+    
+}
+div#interface{
+    width: auto;
+    height: auto;
+    
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 75%;
+    top: 8rem;
+    height: 200px;
+    width: 200px;
+}
+div#bote img{
+    width: 200px;
+    margin: 18px;
+    border-radius: 50%;
+}
+div#bote {
+    width: 600px;
+    margin: 7rem 30%;
+    text-align: center;
+    display: block;
+    color: var(--text-color);   
+}
+div#bot img{
+    width: 200px;
+    margin: 18px;
+    border-radius: 50%;
+}
+div#bot {
+    width: 600px;
+    margin-left: 30%;
+    text-align: center;
+    display: block;
+    color: var(--text-color);   
+}
+div#bot .a{
+    box-shadow: 1px 1px 10px #606060;
+    padding-bottom: 20px;
+    margin: 12px;
+}
+div p{
+    font-size: 20px;
+    margin: 19px ;
+}
+
+
+h2 p{
+    font-size: 40px;
+    color:blue;
+    text-shadow: 1px 1px 3px blue;
+    margin: 8px 80px;
+    padding: 10px;
+}
+
+header#cabecalho img.home{
+   margin: 30px 30px 0px 30px;
+   
+}
+header h2{
+    margin-top: -11px;
+}
+
